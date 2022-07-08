@@ -3,8 +3,8 @@
     font-weight: 300;
     src: url("../fonts/circe/circe_300.woff2") format("woff2"),
          url("../fonts/circe/circe_300.woff") format("woff");
-    /*src: url("..assets/fonts/circe/circe_300.woff2") format("woff2"),
-         url("..assets/fonts/circe/circe_300.woff") format("woff");*/
+    /*src: url("../assets/fonts/circe/circe_300.woff2") format("woff2"),
+         url("../assets/fonts/circe/circe_300.woff") format("woff");*/
 }
 
 @font-face {
@@ -12,8 +12,8 @@
     font-weight: 600;
     src: url("../fonts/circe/circe_600.woff2") format("woff2"),
          url("../fonts/circe/circe_600.woff") format("woff");
-    /*src: url("..assets/fonts/circe/circe_600.woff2") format("woff2"),
-         url("..assets/fonts/circe/circe_600.woff") format("woff");*/
+    /*src: url("../assets/fonts/circe/circe_600.woff2") format("woff2"),
+         url("../assets/fonts/circe/circe_600.woff") format("woff");*/
 }
 
 @font-face {
@@ -21,8 +21,8 @@
     font-weight: 700;
     src: url("../fonts/circe/circe_700.woff2") format("woff2"),
          url("../fonts/circe/circe_700.woff") format("woff");
-    /*src: url("..assets/fonts/circe/circe_700.woff2") format("woff2"),
-         url("..assets/fonts/circe/circe_700.woff") format("woff");*/
+    /*src: url("../assets/fonts/circe/circe_700.woff2") format("woff2"),
+         url("../assets/fonts/circe/circe_700.woff") format("woff");*/
 }
 
 * {
@@ -254,5 +254,5 @@ a {
     align-items: center;
     justify-content: center;
     background-image: url("../img/Прямоугольник 18.svg");
-    /*background-image: url("..assets/img/Прямоугольник 18.svg");*/
+    /*background-image: url("../assets/img/Прямоугольник 18.svg");*/
 }
