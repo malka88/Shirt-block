@@ -59,6 +59,7 @@ a {
 }
 
 .product__slider {
+    position: relative;
     display: flex;
     flex-direction: column;
 }
@@ -97,7 +98,8 @@ a {
     background-color: #fff;
     outline: 1px solid #DEDEDE;
     border: none;
-    transform: translate(25px, 480px);
+    bottom: 1px;
+    right: 25px;
     cursor: pointer;
 }
 
