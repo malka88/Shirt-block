@@ -69,23 +69,22 @@ a {
 }
 
 .product__image_size_s {
-    width: 90px;
-    height: 130px;
     margin-bottom: 30px;
 }
 
+.product__additional-image {
+    width: 90px;
+    height: 130px;
+}
+
 .product__image_size_l {
-    width: 340px;
-    height: 492px;
     overflow: hidden;
     position: relative;
 }
 
 .product__main-image {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    width: 340px;
+    height: 492px;
 }
 
 .product__arrow-next {

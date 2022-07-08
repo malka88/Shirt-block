@@ -1,20 +1,16 @@
-var zoomFigure = document.getElementById('zoomFigure');
+var zoomFigure1 = document.getElementById('zoomFigure1');
+var zoomFigure2 = document.getElementById('zoomFigure2');
+var zoomFigure3 = document.getElementById('zoomFigure3');
 var zoomImage = document.getElementById('zoomImage');
 
-zoomFigure.addEventListener("mousemove", function(event){
-    clientX = event.clientX - zoomFigure.offsetLeft;
-    clientY = event.clientY - zoomFigure.offsetTop;
-
-    zWidth = zoomFigure.offsetWidth;
-    zHeight = zoomFigure.offsetHeight;
-
-    clientX = clientX / zWidth * 100;
-    clientY = clientY / zHeight * 100;
-
-    zoomImage.style.transform = 'translate(-'+clientX+'%, -'+clientY+'%) scale(2)';
-    //zoomImage.style.transform = 'translate(-50%, -50%) scale(2)';
+zoomFigure1.addEventListener("mouseover", function(){
+    zoomImage.src = "assets/img/Слой 48.png";
 })
 
-zoomFigure.addEventListener("mouseleave", function(){
-    zoomImage.style.transform = 'translate(-50%, -50%) scale(1)';
+zoomFigure2.addEventListener("mouseover", function(){
+    zoomImage.src = "assets/img/Слой 49.png";
+})
+
+zoomFigure3.addEventListener("mouseover", function(){
+    zoomImage.src = "assets/img/Слой 50.png";
 })
