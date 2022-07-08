@@ -1,0 +1,257 @@
+@font-face {
+    font-family: "Circe-Light";
+    font-weight: 300;
+    src: url("../fonts/circe/circe_300.woff2") format("woff2"),
+         url("../fonts/circe/circe_300.woff") format("woff");
+    /*src: url("..assets/fonts/circe/circe_300.woff2") format("woff2"),
+         url("..assets/fonts/circe/circe_300.woff") format("woff");*/
+}
+
+@font-face {
+    font-family: "Circe-Bold";
+    font-weight: 600;
+    src: url("../fonts/circe/circe_600.woff2") format("woff2"),
+         url("../fonts/circe/circe_600.woff") format("woff");
+    /*src: url("..assets/fonts/circe/circe_600.woff2") format("woff2"),
+         url("..assets/fonts/circe/circe_600.woff") format("woff");*/
+}
+
+@font-face {
+    font-family: "Circe-ExtraBold";
+    font-weight: 700;
+    src: url("../fonts/circe/circe_700.woff2") format("woff2"),
+         url("../fonts/circe/circe_700.woff") format("woff");
+    /*src: url("..assets/fonts/circe/circe_700.woff2") format("woff2"),
+         url("..assets/fonts/circe/circe_700.woff") format("woff");*/
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #006be5;
+}
+
+.main {
+    width: 1410px;
+    height: 602px;
+    display: block;
+    margin: auto;
+    font-family: "Circe-Light";
+    color: #131313;
+    font-size: 0.813rem;
+}
+
+.product {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.product__images {
+    width: 540px;
+    margin: 22px 110px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.product__slider {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__image {
+    cursor: pointer;
+}
+
+.product__image_size_s {
+    width: 90px;
+    height: 130px;
+    margin-bottom: 30px;
+}
+
+.product__image_size_l {
+    width: 340px;
+    height: 492px;
+    overflow: hidden;
+    position: relative;
+}
+
+.product__main-image {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.product__arrow-next {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 29px;
+    background-color: #fff;
+    outline: 1px solid #DEDEDE;
+    border: none;
+    transform: translate(25px, 480px);
+    cursor: pointer;
+}
+
+.product__info {
+    padding-top: 70px;
+}
+
+.product__title {
+    font-family: "Circe-ExtraBold";
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    padding-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+.product__links-to-similar {
+    display: flex;
+    padding-bottom: 46px;
+}
+
+.product__link {
+    padding-right: 30px;
+    text-decoration: none;
+    color: #006be5;
+}
+
+.product__prices {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    font-size: 1.125rem;
+}
+
+.product__price{
+    font-family: "Circe-Bold";
+    padding-right: 10px;
+    letter-spacing: 1px;
+}
+
+.product__price_old {
+    color: #c3c2c2;
+    text-decoration: none;
+    outline: none;
+}
+
+.product__price_old::before {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 48px;
+    background: #c3c2c2;
+    transform: translate(0, 14px);
+    position: absolute;
+}
+
+.product__price_new-irrelevant {
+    color: #9a9b9b;
+}
+
+.product__price_new-relevant {
+    padding-right: 7px;
+    padding-left: 25px;
+}
+
+.product__promocode{
+    font-size: 0.938rem;
+}
+
+.product__avilable {
+    width: 339px;
+    height: 65px;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+}
+
+.product__avilable-item {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 5px;
+}
+
+.product__avilable-icon {
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.product__actions {
+    margin-top: 50px;
+}
+
+.product__button {
+    width: 240px;
+    height: 40px;
+    border: 3px solid #d9d9d9;
+    background-color: #fff;
+    margin-right: 18px;
+    text-transform: uppercase;
+    font-family: "Circe-Bold";
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.product__button:before {
+	content: "";
+	display: inline-block;
+	height: 16px;
+}
+
+.product__button_hilighted {
+    background-color: #006be5;
+    border: 3px solid #006be5;
+    color: #fff;
+}
+
+.product__description {
+    margin-top: 38px;
+    width: 480px;
+    line-height: 18px;
+}
+
+.product__social {
+    margin-top: 35px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
+.product__social-label {
+    margin-right: 24px;
+}
+
+.product__social-link {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 3px solid #d9d9d9;
+    margin-right: 10px;
+}
+
+.product__social-icon {
+    vertical-align: middle;
+    margin-top: 2px;
+}
+
+.product__social-counter{
+    width: 45px;
+    height: 30px;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../img/Прямоугольник 18.svg");
+    /*background-image: url("..assets/img/Прямоугольник 18.svg");*/
+}
