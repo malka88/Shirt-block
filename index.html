@@ -2,58 +2,66 @@
 <html lang="ru">
     <head>
         <meta charset="UTF-8"/>
-
+        <!-- CSS -->
         <link rel="stylesheet" type="text/css" href="assets/css/styles.css"/>
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src="assets/js/zoom.js" defer></script>
+        <script src="assets/js/counter.js" defer></script>
+        <script src="assets/js/cart.js" defer></script>
 
         <title>Рубашка Medicine</title>
     </head>
     <body>
         <main class="main">
             <div class="product">
+                <!-- BLOCK WITH IMAGES -->
                 <div class="product__images">
                     <div class="product__slider">
-                            <img class="product__additional-image" src="assets/img/Слой 48.png" />
-                            <img class="product__additional-image" src="assets/img/Слой 49.png" />
-                            <img class="product__additional-image" src="assets/img/Слой 50.png" />
+                        <img class="product__additional-image" src="assets/img/Слой 48.png" />
+                        <img class="product__additional-image" src="assets/img/Слой 49.png" />
+                        <img class="product__additional-image" src="assets/img/Слой 50.png" />
                         <button class="product__arrow-next">
-                            <img src="assets/img/Layer 91 copy.svg"/>
+                        <img src="assets/img/Layer 91 copy.svg"/>
                         </button>
                     </div>
                         <img class="product__main-image" src="assets/img/Слой 48.png" />
                 </div>
+                <!-- BLOCK WITH INFORMATION -->
                 <div class="product__info">
                     <h1 class="product__title">Рубашка Medicine</h1>
                     <div class="product__categories">
                         <div class="product__link">
-                            <a href="">Рубашки Medicine</a>
+                            <a href="#">Рубашки Medicine</a>
                         </div>
                         <div class="product__link">
-                            <a href="">Все модели Medicine</a>
+                            <a href="#">Все модели Medicine</a>
                         </div>
                         <div class="product__link">
-                            <a href="">Рубашки</a>
+                            <a href="#">Рубашки</a>
                         </div>
                     </div>
                     <div class="product__prices">
-                        <div class="product__price product__price--old">
+                        <span class="product__price product__price--old">
                             2 699
-                        </div>
-                        <div class="product__price product__price--new-irrelevant">
+                        </span>
+                        <span class="product__price product__price--new-irrelevant">
                             2 499 ₽
-                        </div>
-                        <div class="product__price product__price--new-relevant">
+                        </span>
+                        <span class="product__price product__price--new-relevant">
                             2 227 ₽
-                        </div>
-                        <div class="product__promocode">
+                        </span>
+                        <span class="product__promocode">
                             — с промокодом
-                        </div>
+                        </span>
                     </div>
                     <div class="product__avilable">
                         <div class="product__avilable-item">
                             <img class="product__avilable-icon" src="assets/img/Layer 99.svg"/>
                             <span class="product__avilable-label">В наличии в магазине&nbsp</span>
                             <div class="product__link">
-                                <a href="">Lamoda</a>
+                                <a href="#">Lamoda</a>
                             </div>
                         </div>
                         <div class="product__avilable-item">
@@ -61,27 +69,33 @@
                             <span class="product__avilable-label">Бесплатная доставка</span>
                         </div>
                     </div>
+                    <div class="product__counter">
+                        <button class="product__amount-button product__amount-button--minus" onclick="decrement()">-</button>
+                        <input class="product__amount" type="number" value="1" step="1" min="1" max="10" readonly>
+                        <button class="product__amount-button" onclick="increment()">+</button>
+                    </div>
                     <div class="product__actions">
-                        <button class="product__button product__button--hilighted">В магазин</button>
+                        <button class="product__button product__button--hilighted" onclick="addToCart()">Купить</button>
                         <button class="product__button">В избранное</button>
                     </div>
-                    <p class="product__description">Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.<br/>
+                    <p class="product__description">
+                        Рубашка Medicine выполнена из вискозной ткани с клетчатым узором.<br/>
                         Детали: прямой крой; отложной воротник; планка и манжеты на пуговицах; 
                         карман на груди.
                     </p>
                     <div class="product__social">
                         Поделиться:
-                        <a class="product__social-link" href="">
-                            <img src="assets/img/vk.png"/>
+                        <a class="product__social-link" href="#" target="_blank">
+                            <img src="assets/img/vk.png" alt="VK"/>
                         </a>
-                        <a class="product__social-link" href="">
-                            <img src="assets/img/gmail.png"/>
+                        <a class="product__social-link" href="#" target="_blank">
+                            <img src="assets/img/gmail.png" alt="Gmail"/>
                         </a>
-                        <a class="product__social-link" href="">
-                            <img src="assets/img/facebook.png"/>
+                        <a class="product__social-link" href="#" target="_blank">
+                            <img src="assets/img/facebook.png" alt="Facebook"/>
                         </a>
-                        <a class="product__social-link" href="">
-                            <img src="assets/img/twitter.png"/>
+                        <a class="product__social-link" href="#" target="_blank">
+                            <img src="assets/img/twitter.png" alt="Twitter"/>
                         </a>
                         <div class="product__social-counter">123</span>
                     </div>
@@ -89,5 +103,4 @@
             </div>
         </main>
     </body>
-    <script src="assets/js/zoom.js"></script>
 </html>
