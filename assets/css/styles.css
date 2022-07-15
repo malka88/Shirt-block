@@ -42,7 +42,7 @@ a {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    font-family: "Circe";
+    font-family: "Circe", sans-serif;
     font-weight: 300;
     color: #131313;
     font-size: 0.813rem;
@@ -102,7 +102,7 @@ a {
 }
 
 .product__title {
-    font-family: "Circe";
+    font-family: "Circe", sans-serif;
     font-weight: 700;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -130,7 +130,7 @@ a {
 }
 
 .product__price{
-    font-family: "Circe";
+    font-family: "Circe", sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
 }
@@ -238,7 +238,7 @@ a {
     border: 2px solid #d9d9d9;
     background-color: #fff;
     text-transform: uppercase;
-    font-family: "Circe";
+    font-family: "Circe", sans-serif;
     font-weight: 600;
     vertical-align: middle;
     cursor: pointer;
@@ -278,7 +278,7 @@ a {
 
 .product__social-counter {
     position:relative;
-    width: 40px;
+    padding: 0 10px;
     height: 30px;
     margin-left: 18px;
     background-color: #efefef;
@@ -297,6 +297,6 @@ a {
 }
 
 .product__alert {
-    font-family: "Circe";
+    font-family: "Circe", sans-serif;
     font-weight: 300;
 }

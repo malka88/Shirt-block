@@ -1,16 +1,16 @@
-var count = 1;
-document.getElementsByClassName('product__amount')[0] = count;
+let count = 1;
+document.querySelector('.product__amount') = count;
 
 function increment() {
     if(count < 10) {
         count++;
-        document.getElementsByClassName('product__amount')[0].value = count;
+        document.querySelector('.product__amount').value = count;
     }
 }
 
 function decrement() {
     if(count > 1) {
         count--;
-        document.getElementsByClassName('product__amount')[0].value = count;
+        document.querySelector('.product__amount').value = count;
     }
 }
